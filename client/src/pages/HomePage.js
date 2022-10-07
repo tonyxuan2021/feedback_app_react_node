@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import HeaderFeedback from "../components/HeaderFeedback";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <HeaderFeedback />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
