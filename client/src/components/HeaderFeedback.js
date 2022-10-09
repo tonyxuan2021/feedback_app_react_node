@@ -29,7 +29,7 @@ export default function HeaderFeedback() {
               Feedback Board
             </Typography>
           </Grid>
-          <CloseIcon />
+          <MenuIcon />
         </Toolbar>
       </AppBar>
     </Box>
