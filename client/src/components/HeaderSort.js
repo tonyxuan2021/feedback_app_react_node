@@ -13,7 +13,7 @@ const HeaderSort = () => {
       justifyContent="space-between"
       sx={{
         background: theme.palette.dark.main,
-        minHeight: "60px",
+        minHeight: "65px",
         p: "0 1rem",
       }}
     >
