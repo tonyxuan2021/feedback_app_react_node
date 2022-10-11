@@ -1,16 +1,18 @@
 import React from "react";
-import FeedbackTicket from "../components/FeedbackTicket";
 import HeaderFeedback from "../components/HeaderFeedback";
 import HeaderSort from "../components/HeaderSort";
+import detective from "../assets/image/mobile/illustration-empty.svg";
 
-const HomePage = () => {
+const NoFeedbackPage = () => {
   return (
     <div>
       <HeaderFeedback />
       <HeaderSort />
-      <FeedbackTicket />
+      <div>
+        <img src={detective}></img>
+      </div>
     </div>
   );
 };
 
-export default HomePage;
+export default NoFeedbackPage;
