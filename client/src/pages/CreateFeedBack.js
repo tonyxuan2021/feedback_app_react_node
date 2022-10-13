@@ -9,26 +9,39 @@ const CreateFeedBack = () => {
         <ChevronLeftIcon />
         <Typography>Go Back</Typography>
       </Grid>
-      <Grid>
-        <Typography>Create New Feedback</Typography>
-        <Typography>Feedback Title</Typography>
-        <Typography>Add a short, descriptive headline</Typography>
-        <TextField></TextField>
+      <Grid
+        display="flex"
+        flexDirection="column"
+        gap={2}
+        sx={{
+          background: "white",
+          m: "3rem 1.5rem",
+          p: "2rem 1.5rem",
+          borderRadius: "10px",
+        }}
+      >
+        <Grid>
+          <Typography>Create New Feedback</Typography>
+          <Typography>Feedback Title</Typography>
+          <Typography>Add a short, descriptive headline</Typography>
+          <TextField fullWidth></TextField>
+        </Grid>
+        <Grid>
+          <Typography>Category</Typography>
+          <Typography>Choose a category for your feedback</Typography>
+          <TextField fullWidth></TextField>
+        </Grid>
+        <Grid>
+          <Typography>Feedback Detail</Typography>
+          <Typography>
+            Include any specific comments on what should be improved, added,
+            etc.
+          </Typography>
+          <TextField multiline rows={4} fullWidth></TextField>
+        </Grid>
+        <Button>Add Feedback</Button>
+        <Button>Cancel</Button>
       </Grid>
-      <Grid>
-        <Typography>Category</Typography>
-        <Typography>Choose a category for your feedback</Typography>
-        <TextField></TextField>
-      </Grid>
-      <Grid>
-        <Typography>Feedback Detail</Typography>
-        <Typography>
-          Include any specific comments on what should be improved, added, etc.
-        </Typography>
-        <TextField multiline rows={4}></TextField>
-      </Grid>
-      <Button>Add Feedback</Button>
-      <Button>Cancel</Button>
     </Grid>
   );
 };
