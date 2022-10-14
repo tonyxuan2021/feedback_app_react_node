@@ -7,9 +7,9 @@ import plusBtn from "../assets/image/mobile/icon-new-feedback.svg";
 const CreateFeedBack = () => {
   return (
     <Grid sx={{ position: "relative" }}>
-      <Grid display="flex" sx={{ position: "absolute" }}>
-        <ChevronLeftIcon />
-        <Typography>Go Back</Typography>
+      <Grid display="flex" sx={{ ml: "1rem", pt: "2rem" }}>
+        <ChevronLeftIcon color="secondary" />
+        <Typography color={theme.palette.dark.main}>Go Back</Typography>
       </Grid>
       <Grid
         display="flex"
@@ -17,14 +17,14 @@ const CreateFeedBack = () => {
         gap={2}
         sx={{
           background: "white",
-          m: "6rem 1.5rem",
+          m: "3rem 1.5rem",
           p: "2rem 1.5rem",
           borderRadius: "10px",
           position: "relative",
         }}
       >
-        <Grid sx={{ position: "absolute", top: "-2rem" }}>
-          <img src={plusBtn}></img>
+        <Grid sx={{ position: "absolute", top: "-18px" }}>
+          <img style={{ width: "36px" }} src={plusBtn}></img>
         </Grid>
         <Grid>
           <Typography
@@ -103,10 +103,15 @@ const CreateFeedBack = () => {
             sx={{ background: theme.palette.grey.main }}
           ></TextField>
         </Grid>
-        <Button variant="contained">Add Feedback</Button>
+        <Button variant="contained" sx={{ textTransform: "capitalize" }}>
+          Add Feedback
+        </Button>
         <Button
           variant="contained"
-          sx={{ background: theme.palette.dark.main }}
+          sx={{
+            background: theme.palette.dark.main,
+            textTransform: "capitalize",
+          }}
         >
           Cancel
         </Button>
