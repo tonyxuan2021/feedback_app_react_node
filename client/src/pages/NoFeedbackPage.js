@@ -32,7 +32,7 @@ const NoFeedbackPage = () => {
           variant="body2"
           textAlign="center"
           color={theme.palette.dark.main}
-          sx={{opacity:"0.6"}}
+          sx={{opacity:"0.8"}}
         >
           Got a suggestion? Found a bug that needs to be squashed? We love
           hearing about new ideas to improve our app.
