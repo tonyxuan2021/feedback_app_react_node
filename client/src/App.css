@@ -6,3 +6,7 @@
 .no__feedback__img {
   width: 100%;
 }
+
+.MuiTabs-flexContainer {
+  justify-content: center;
+}
