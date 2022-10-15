@@ -19,5 +19,8 @@ export const theme = createTheme({
       main: "#F7F8FD",
       secondary: "#F2F4FF",
     },
+    red: {
+      main: "#D73737",
+    },
   },
 });

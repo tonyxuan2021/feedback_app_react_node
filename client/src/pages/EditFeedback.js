@@ -1,10 +1,10 @@
+import React from "react";
 import { Button, Grid, TextField, Typography } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import React from "react";
 import { theme } from "../components/ThemeColor";
-import plusBtn from "../assets/image/mobile/icon-new-feedback.svg";
+import editBtn from "../assets/image/mobile/icon-edit-feedback.svg";
 
-const CreateFeedBack = () => {
+const EditFeedback = () => {
   return (
     <Grid sx={{ position: "relative" }}>
       <Grid display="flex" sx={{ ml: "1rem", pt: "2rem" }}>
@@ -24,7 +24,7 @@ const CreateFeedBack = () => {
         }}
       >
         <Grid sx={{ position: "absolute", top: "-18px" }}>
-          <img style={{ width: "36px" }} src={plusBtn}></img>
+          <img style={{ width: "36px" }} src={editBtn}></img>
         </Grid>
         <Grid>
           <Typography
@@ -33,7 +33,7 @@ const CreateFeedBack = () => {
             color={theme.palette.dark.main}
             sx={{ mb: 3 }}
           >
-            Create New Feedback
+            Editing ‘Add a dark theme option’
           </Typography>
           <Typography
             variant="body2"
@@ -83,6 +83,28 @@ const CreateFeedBack = () => {
             variant="body2"
             fontWeight={600}
             color={theme.palette.dark.main}
+            sx={{ mb: 1 }}
+          >
+            Update Status
+          </Typography>
+          <Typography
+            variant="body2"
+            color={theme.palette.dark.main}
+            sx={{ opacity: "0.8", mb: 1 }}
+          >
+            Change featuer state
+          </Typography>
+          <TextField
+            fullWidth
+            variant="filled"
+            sx={{ background: theme.palette.grey.main }}
+          ></TextField>
+        </Grid>
+        <Grid>
+          <Typography
+            variant="body2"
+            fontWeight={600}
+            color={theme.palette.dark.main}
             sx={{ mb: 1, mb: 1 }}
           >
             Feedback Detail
@@ -115,9 +137,18 @@ const CreateFeedBack = () => {
         >
           Cancel
         </Button>
+        <Button
+          variant="contained"
+          sx={{
+            background: theme.palette.red.main,
+            textTransform: "capitalize",
+          }}
+        >
+          Delete
+        </Button>
       </Grid>
     </Grid>
   );
 };
 
-export default CreateFeedBack;
+export default EditFeedback;
