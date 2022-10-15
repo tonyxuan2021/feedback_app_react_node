@@ -1,6 +1,6 @@
 .App {
   background-color: #f7f8fd;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .no__feedback__img {

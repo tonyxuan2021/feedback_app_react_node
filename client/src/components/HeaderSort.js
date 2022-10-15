@@ -3,7 +3,6 @@ import React from "react";
 import { theme } from "./ThemeColor";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AddIcon from "@mui/icons-material/Add";
-import DeleteIcon from "@mui/icons-material/Delete";
 
 const HeaderSort = () => {
   return (
