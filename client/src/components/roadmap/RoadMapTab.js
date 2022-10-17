@@ -13,7 +13,7 @@ export default function RoadMapTab() {
   return (
     <Box sx={{ width: "100%" }}>
       <Tabs
-        TabIndicatorProps={{ style: { height: "6px" } }}
+        TabIndicatorProps={{ style: { height: "4px" } }}
         value={value}
         onChange={handleChange}
         textColor={theme.palette.dark.main}

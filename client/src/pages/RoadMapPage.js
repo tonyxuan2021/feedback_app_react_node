@@ -1,4 +1,5 @@
 import React from "react";
+import RoadMapBody from "../components/roadmap/RoadMapBody";
 import RoadMapHeader from "../components/roadmap/RoadMapHeader";
 import RoadMapTab from "../components/roadmap/RoadMapTab";
 
@@ -7,6 +8,7 @@ const RoadMapPage = () => {
     <div>
       <RoadMapHeader />
       <RoadMapTab />
+      <RoadMapBody />
     </div>
   );
 };
