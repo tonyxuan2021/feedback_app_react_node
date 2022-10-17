@@ -3,6 +3,7 @@ import { Grid, Button, Typography, AppBar, Box, Toolbar } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import AddIcon from "@mui/icons-material/Add";
 import { theme } from "../ThemeColor";
+import { Link } from "react-router-dom";
 
 const RoadMapHeader = () => {
   return (
@@ -16,15 +17,17 @@ const RoadMapHeader = () => {
       >
         <Toolbar display="flex" sx={{ justifyContent: "space-between" }}>
           <Grid display="flex" flexDirection="column" alignItems="center">
-            <Grid display="flex">
-              <ChevronLeftIcon color={theme.palette.light.main} />
-              <Typography
-                color={theme.palette.light.secondary}
-                fontWeight={700}
-              >
-                Go Back
-              </Typography>
-            </Grid>
+            <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+              <Grid display="flex">
+                <ChevronLeftIcon color={theme.palette.light.main} />
+                <Typography
+                  color={theme.palette.light.secondary}
+                  fontWeight={700}
+                >
+                  Go Back
+                </Typography>
+              </Grid>
+            </Link>
             <Typography fontWeight={700}>Roadmap</Typography>
           </Grid>
           <Button

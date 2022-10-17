@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -8,8 +8,11 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import headerBkg from "../assets/image/mobile/background-header.png";
 import { Grid } from "@mui/material";
+import FeedbackDrawer from "./FeedbackDrawer";
 
 export default function HeaderFeedback() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -29,9 +32,17 @@ export default function HeaderFeedback() {
               Feedback Board
             </Typography>
           </Grid>
-          <MenuIcon />
+          <MenuIcon
+            sx={{ display: `${isDrawerOpen ? "none" : "block"}` }}
+            onClick={() => setIsDrawerOpen(true)}
+          />
+          <CloseIcon sx={{ display: `${isDrawerOpen ? "block" : "none"}` }} />
         </Toolbar>
       </AppBar>
+      <FeedbackDrawer
+        isDrawerOpen={isDrawerOpen}
+        setIsDrawerOpen={setIsDrawerOpen}
+      />
     </Box>
   );
 }

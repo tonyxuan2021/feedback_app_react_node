@@ -22,5 +22,11 @@ export const theme = createTheme({
     red: {
       main: "#D73737",
     },
+    orange: {
+      main: "#F49F85",
+    },
+    lightblue: {
+      main: "#62BCFA",
+    },
   },
 });
