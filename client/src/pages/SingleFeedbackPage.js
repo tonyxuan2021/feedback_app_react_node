@@ -6,8 +6,12 @@ import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import elijah from "../assets/image/user-images/image-elijah.jpg";
 import james from "../assets/image/user-images/image-james.jpg";
 import { theme } from "../components/ThemeColor";
+import { useParams } from "react-router-dom";
 
 const SingleFeedbackPage = () => {
+  let { id } = useParams();
+  console.log(id);
+
   return (
     <Grid>
       <Grid display="flex" justifyContent="space-between" alignItems="center">

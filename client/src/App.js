@@ -16,7 +16,7 @@ function App() {
           <Route path="/nofeedback" element={<NoFeedbackPage />}></Route>
           <Route path="/create" element={<CreateFeedBack />}></Route>
           <Route path="/edit" element={<EditFeedback />}></Route>
-          <Route path="/feedback" element={<SingleFeedbackPage />}></Route>
+          <Route path="/feedback/:id" element={<SingleFeedbackPage />}></Route>
           <Route path="/roadmap" element={<RoadMapPage />}></Route>
         </Routes>
       </BrowserRouter>
