@@ -1,8 +1,13 @@
 const express = require("express");
 const app = express();
 const port = 8080;
+const knex = require("knex")(require("./knexfile"));
 
-app.get("/", (req, res) => {
+const cors = require("cors");
+
+app.use(cors());
+
+app.get("/api/getfeedbacks", (req, res) => {
   res.send("Hello World!");
 });
 
